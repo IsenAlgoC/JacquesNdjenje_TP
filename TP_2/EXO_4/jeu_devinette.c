@@ -28,5 +28,6 @@ int main()
 	printf("FELICITATION VOUS AVEZ DEVINE LE NOMBRE\n");
 	printf("%d", score);
 
+
 	return 0;
 }

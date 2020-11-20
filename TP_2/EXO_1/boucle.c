@@ -73,7 +73,5 @@ int main() {
 
 	printf("la valeur de som est %d\n", som);
 
-
-
 	return 0;
 }
