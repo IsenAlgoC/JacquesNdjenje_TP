@@ -5,8 +5,11 @@ int main() {
 
 	int n;
 	int som = 0;
-
-	printf("la valeur de a est %d\n", n);
+    
+	printf("entrer un nombre supérieur a 1");
+	scanf_s("%d", &n);
+	
+	/* somme des n premiers entiers positifs avec la boucle while*/
 	while (n <= 100)
 	{
 		som = som + n;
@@ -15,12 +18,16 @@ int main() {
 
 	printf("la valeur de som est %d\n", som);
 
+	/* somme des n premiers entiers positifs avec la boucle for*/
+
 	for (int n = 2; n <= 100; n++)
 	{
 		som = som + n;
 	}
 
 	printf("la valeur de som est %d\n", som);
+
+	/* somme des n premiers entiers positifs avec la boucle do while*/
 
 	do
 	{
@@ -29,6 +36,8 @@ int main() {
 	} while (n <= 100);
 
 	printf("la valeur de som est %d\n", som);
+
+	/* valeur maximun de n dépassement de capacité */
 
 	int max = 65535;
 	int som = 0;
@@ -43,14 +52,13 @@ int main() {
 
 	printf("la valeur de som est %d\n", som);
 
-
-
-
+	/* demander la valeu n à l'utilisateur*/
 
 	printf("entre la valeur de n\n");
 	for (scanf_s("%d", &n); n <= 100; n++)
 	{
-		if (n > 100)
+		if (n > 100) 	/* condition sur la valeur den choisit */
+
 		{
 			printf("entrer un nouveau nombre\n");
 
